@@ -54,7 +54,7 @@ const comment = (selection: string): string => {
   else
     comment = `${dividerLine}\n${commentContents.join("\n")}\n${dividerLine}`;
 
-  return comment + "\n";
+  return comment;
 };
 
 export default comment;

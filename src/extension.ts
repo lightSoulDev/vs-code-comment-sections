@@ -8,23 +8,32 @@ const generateComment = (editor: vscode.TextEditor) => {
 
   editor.edit((b) => {
     selections.forEach(async (selection) => {
-      let com: string = "";
       if (!selection.isEmpty) {
         const text = document.getText(selection);
 
-        com = comment(text);
-        b.replace(selection, com);
+        b.replace(selection, comment(text));
       } else {
         const { text, rangeIncludingLineBreak } = document.lineAt(
           selection.active.line
         );
 
-        com = comment(text);
+        let com = comment(text);
         b.replace(rangeIncludingLineBreak, com + "\n");
+        await vscode.commands.executeCommand("cursorMove", {
+          to: "wrappedLineStart",
+          by: "line",
+          select: true,
+        });
+        await vscode.commands.executeCommand("cursorMove", {
+          to: "down",
+          by: "line",
+          select: true,
+          value: com.split("\n").length,
+        });
       }
     });
-    vscode.commands.executeCommand("editor.action.addCommentLine");
   });
+  vscode.commands.executeCommand("editor.action.addCommentLine");
 };
 
 // this method is called when your extension is activated
