@@ -1,6 +1,6 @@
 # Cool Comment Sections
 
-Automaticly generates styled comment sections from your selection.
+Automatically generates styled comment sections from your selection.
 
 ```js
 events
