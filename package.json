@@ -2,7 +2,7 @@
   "name": "coolcommentsections",
 	"displayName": "CoolCommentSections",
 	"description": "Auto generate cool comment section dividers",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"icon": "icon.png",
     "publisher": "LightSoulDev",
     "repository": "https://github.com/lightSoulDev/vs-code-comment-sections",
@@ -10,6 +10,13 @@
 	"engines": {
 		"vscode": "^1.64.0"
 	},
+	"keywords": [
+        "auto",
+        "comment",
+        "block",
+        "section",
+		"diviers"
+    ],
 	"categories": [
 		"Other"
 	],
