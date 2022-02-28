@@ -2,7 +2,11 @@
   "name": "coolcommentsections",
 	"displayName": "CoolCommentSections",
 	"description": "Auto generate cool comment section dividers",
-	"version": "0.0.1",
+	"version": "1.0.0",
+	"icon": "icon.png",
+    "publisher": "LightSoulDev",
+    "repository": "https://github.com/lightSoulDev/vs-code-comment-sections",
+	"license": "MIT",
 	"engines": {
 		"vscode": "^1.64.0"
 	},
@@ -13,6 +17,11 @@
         "onCommand:coolcommentsections.generateComment"
 	],
 	"main": "./dist/extension.js",
+	"capabilities": {
+        "untrustedWorkspaces": {
+            "supported": true
+        }
+    },
 	"contributes": {
 		"commands": [
 			{
@@ -33,7 +42,14 @@
 			"title": "Cool Comment Section Params",
 			"properties": {
 				"coolcommentsections.params": {
-					"type": "object"
+					"type": "object",
+					"default": {
+						"blockLenght" : 50,
+						"singleLine" : false,
+						"divider" : "=-",
+						"adjustDivider" : true,
+						"formatSelection" : true
+					}
 				}
 			}
 		}
