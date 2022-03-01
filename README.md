@@ -15,7 +15,11 @@ events
 
 ## Installing
 
-You can install the latest version of the extension via the Visual Studio Marketplace [here](https://marketplace.visualstudio.com/items?itemName=LightSoulDev.coolcommentsections).
+You can install the latest version of the extension via the Visual Studio Marketplace <br/>
+
+<a href="https://marketplace.visualstudio.com/items?itemName=LightSoulDev.coolcommentsections">
+<img alt="VS Marketplace" src="https://img.shields.io/static/v1?label&message=VS%20Marketplace&style=for-the-badge&logo=visualstudiocode&color=555&logoColor=007ACC" />
+</a>
 
 Alternatively, open Visual Studio code, press `Ctrl+P` or `Cmd+P` and type:
 
