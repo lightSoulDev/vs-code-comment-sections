@@ -96,7 +96,9 @@ export function activate(context: vscode.ExtensionContext) {
         async () => {
             const { activeTextEditor: editor } = vscode.window;
 
-            if (editor) await generateComment(editor);
+            if (editor) {
+                await generateComment(editor);
+            }
         }
     );
 

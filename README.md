@@ -55,10 +55,24 @@ The source code is available on GitHub [lightSoulDev/vs-code-comment-sections](h
     //     [false]: "// =-=-=-=- "
     //     [true]:  "// =-=-=-= "
     "adjustDivider" : true,
-    // Apply spacing and uppercase to selection
+    // Add MARK: prefix for VS Code section navigation
+    // Examples:
+    //     [false]: "// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= "
+    //              "// =-  S E L E C T I O N  -= "
+    //              "// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= "
+    //     [true]:  "// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= "
+    //              "// =-  M A R K :   S E L E C T I O N  -= "
+    //              "// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= "
+    "useMark" : false,
+    // Convert selection to uppercase
     // Examples:
     //     [false]: "// =-      selection      -= "
+    //     [true]:  "// =-      SELECTION      -= "
+    "makeUppercase" : true,
+    // Add spacing between characters
+    // Examples:
+    //     [false]: "// =-      SELECTION      -= "
     //     [true]:  "// =-  S E L E C T I O N  -= "
-    "formatSelection" : true
+    "addSpacing" : true
 }
 ```

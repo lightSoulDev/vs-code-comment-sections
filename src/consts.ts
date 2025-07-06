@@ -11,10 +11,14 @@ export const PARAM_BLOCK_LENGHT = 'blockLenght';
 export const PARAM_SINGLE_LINE = 'singleLine';
 export const PARAM_DIVIDER = 'divider';
 export const PARAM_ADJUST = 'adjustDivider';
-export const PARAM_FORMAT_SELECTION = 'formatSelection';
+export const PARAM_USE_MARK = 'useMark';
+export const PARAM_MAKE_UPPERCASE = 'makeUppercase';
+export const PARAM_ADD_SPACING = 'addSpacing';
 
 export const DEFAULT_BLOCK_LENGHT: number = 50;
 export const DEFAULT_SINGLE_LINE: boolean = false;
 export const DEFAULT_DIVIDER: string = '=-';
 export const DEFAULT_ADJUST: boolean = true;
-export const DEFAULT_FORMAT_SELECTION: boolean = true;
+export const DEFAULT_USE_MARK: boolean = false;
+export const DEFAULT_MAKE_UPPERCASE: boolean = true;
+export const DEFAULT_ADD_SPACING: boolean = true;

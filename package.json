@@ -2,7 +2,7 @@
   "name": "coolcommentsections",
 	"displayName": "CoolCommentSections",
 	"description": "Auto generate cool comment section dividers",
-	"version": "1.0.1",
+	"version": "1.1.0",
 	"icon": "icon.png",
     "publisher": "LightSoulDev",
     "repository": "https://github.com/lightSoulDev/vs-code-comment-sections",
@@ -55,7 +55,9 @@
 						"singleLine" : false,
 						"divider" : "=-",
 						"adjustDivider" : true,
-						"formatSelection" : true
+						"useMark" : false,
+						"makeUppercase" : true,
+						"addSpacing" : true
 					}
 				}
 			}
